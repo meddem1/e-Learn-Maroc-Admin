@@ -22,7 +22,7 @@ L'objectif principal est d'optimiser l'administration de la base de données pou
 ## 📂 Structure du Répertoire (Git)
 | Fichier | Description |
 | :--- | :--- |
-| `01_setup_pdb.sql` | Création de la PDB et configuration initiale. |
+| `01_setup_pdb.sql` | Création de la PDB et configuration initiale. | ( AMANOU Wiam )
 | `02_storage_mgmt.sql` | Scripts de création des Tablespaces (`TS_ELEARN_DATA`, `TS_ELEARN_EXAMS`).(MELLOULI Yousra) | 
 | `03_resource_profiles.sql` | Configuration des profils de limitation (CPU, Session time). |
 | `04_db_schema.sql` | Scripts de création des tables (Users, Exams, Answers). |
