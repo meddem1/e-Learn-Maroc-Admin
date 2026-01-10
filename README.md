@@ -1,9 +1,9 @@
 # e-Learn-Maroc-Admin
 projt d'administration de base de donnees Oracle
-# Projet 2 : Plateforme d'Enseignement en Ligne (e-Learn Maroc)
+# Projet  : Plateforme d'Enseignement en Ligne (e-Learn Maroc)
 
 ## 👥 Équipe de Projet
-* **Membres :** Wiam, Salma, Youssra, Mohamed, Abdelrahim.
+* **Membres :** Wiam, Salma, Youssra, Mohamed, Abderahim.
 * **Contexte :** Gestion d'une base de données Oracle (PDB) pour une plateforme gérant des milliers d'étudiants et des sessions d'examens intensives.
 
 ---
