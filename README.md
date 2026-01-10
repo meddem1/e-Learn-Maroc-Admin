@@ -15,7 +15,7 @@ L'objectif principal est d'optimiser l'administration de la base de données pou
 2. **Stockage :** Gestion des Tablespaces (séparation des données utilisateurs et examens).
 3. **Performance :** Adaptation du segment `UNDO` pour les transactions longues.
 4. **Sécurité & Ressources :** Limitation des ressources via des `Profiles` utilisateurs.
-5. **Disponibilité :** Stratégie de sauvegarde (Backup) avant chaque session d'examen.
+5. **Disponibilité :** Stratégie de sauvegarde (Backup) avant chaque session d'examen. 
 
 ---
 
