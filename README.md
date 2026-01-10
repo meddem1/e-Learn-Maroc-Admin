@@ -26,7 +26,7 @@ L'objectif principal est d'optimiser l'administration de la base de données pou
 | `02_storage_mgmt.sql` | Scripts de création des Tablespaces (`TS_ELEARN_DATA`, `TS_ELEARN_EXAMS`). |
 | `03_resource_profiles.sql` | Configuration des profils de limitation (CPU, Session time). |
 | `04_db_schema.sql` | Scripts de création des tables (Users, Exams, Answers). |
-| `05_backup_strategy.rman` | Script RMAN pour la sauvegarde avant examen. |
+| `05_backup_strategy.rman` | Script RMAN pour la sauvegarde avant examen.(Mohammed-labbi) |
 
 ---
 
