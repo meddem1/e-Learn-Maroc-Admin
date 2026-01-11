@@ -3,7 +3,7 @@ projt d'administration de base de donnees Oracle
 # Projet  : Plateforme d'Enseignement en Ligne (e-Learn Maroc)
 
 ## 👥 Équipe de Projet
-* **Membres :** Wiam, Salma, Youssra, Mohamed, Abderahim.
+* **Membres :** Wiam, Salma, Youssra, Mohamed, Abderrahim.
 * **Contexte :** Gestion d'une base de données Oracle (PDB) pour une plateforme gérant des milliers d'étudiants et des sessions d'examens intensives.
 
 ---
@@ -24,7 +24,7 @@ L'objectif principal est d'optimiser l'administration de la base de données pou
 | :--- | :--- |
 | `01_setup_pdb.sql` | Création de la PDB et configuration initiale. | ( AMANOU Wiam )
 | `02_storage_mgmt.sql` | Scripts de création des Tablespaces (`TS_ELEARN_DATA`, `TS_ELEARN_EXAMS`).(MELLOULI Yousra) | 
-| `03_resource_profiles.sql` | Configuration des profils de limitation (CPU, Session time). |
+| `03_resource_profiles.sql` | Configuration des profils de limitation (CPU, Session time). (Abderrahim EL ASSALY) |
 | `04_db_schema.sql` | Scripts de création des tables (Users, Exams, Answers). |
 | `05_backup_strategy.rman` | Script RMAN pour la sauvegarde avant examen.(Mohammed-labbi) |
 
