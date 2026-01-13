@@ -406,15 +406,26 @@ CREATE TABLE logs_sauvegarde (
 
 set -e
 
-echo "=== Déploiement de la base de données e-Learn MAROC ==="
-
-# Variables
-PDB_NAME="eLearn_MAROC"
-ORACLE_SID="ORCLCDB"
-ORACLE_HOME="/opt/oracle/product/19c/dbhome_1"
-SCRIPT_DIR="/opt/oracle/scripts/eLearn"
-LOG_FILE="/opt/oracle/logs/deploy_eLearn_$(date +%Y%m%d_%H%M%S).log"
-
+------rman-------------------LABBI_MOHAMMED------------------
+#-----creation d'job---------
+    BEGIN
+DBMS_SCHEDULER.CREATE_JOB (
+job_name => 'PRE_EXAM_BACKUP_JOB',
+job_type => 'EXECUTABLE',
+job_action => '/home/oracle/scripts/backup_pdb.sh',
+start_date => SYSTIMESTAMP,
+repeat_interval => 'FREQ=DAILY; BYHOUR=7; BYMINUTE=30',
+enabled => TRUE
+);
+----------rman--in--bash-------------
+/bin/bash
+export ORACLE_SID=orcl
+rman target / <
+RUN {
+    BACKUP PLUGGABLE DATABASE eLearn_PDB FORMAT '/backups/exam_%d_%T.bkp';
+}
+EXIT;
+EOF
 # Fonction de logging
 log_message() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a $LOG_FILE
